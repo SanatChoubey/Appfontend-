@@ -83,7 +83,7 @@ const AddTransction  = () => {
             const body = {
               "description": adddata.description,
                 "debit": 0,
-                "credit": adddata.amount,
+                "credit": parseInt(adddata.amount),
                 "date": CurrentDate,
                 "runningBalance": adddata.runningBalance
             }
@@ -96,7 +96,7 @@ const AddTransction  = () => {
           }else{
             const body = {
               "description": adddata.description,
-                "debit": adddata.amount,
+                "debit": parseInt(adddata.amount),
                 "credit": 0,
                 "date": CurrentDate,
                 "runningBalance": adddata.runningBalance
