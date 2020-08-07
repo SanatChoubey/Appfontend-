@@ -67,7 +67,7 @@ function App() {
       <Button onClick={()=>{
         history.push('/add')
       }} primary>ADD Transcation</Button>
-      <div className="ag-theme-alpine" style={ {height: '90vh', width: '600px', marginTop:10} }>
+      <div className="ag-theme-alpine" style={ {height: '90vh', width: '80%', marginTop:10} }>
  
       <AgGridReact
             columnDefs={columns}
